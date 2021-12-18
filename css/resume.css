@@ -1,0 +1,284 @@
+
+.logo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.9rem;
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 2px;
+    
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav__bar{
+    list-style-type: none;
+   
+
+}
+.nav__bar--list{
+    display: inline;
+}
+.nav__bar--list a{
+    text-decoration: none;
+    padding: 0 1.4rem;
+    font-size: 1.8rem;
+    color: white;
+
+}
+.nav__bar--list a:hover{
+    color: rgb(218, 106, 106);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    margin: 0;
+   
+    background-color: #232A34;
+
+}
+main{
+    display: grid;
+    grid-template-columns: 45% 50%;
+    grid-template-rows: 55% 45%;
+    padding: 25px;
+    grid-template-areas: 
+    "tables certificates"
+    "articles skills"
+}
+.headers{
+    grid-area: "headers";
+    
+    grid-column: 1/3;
+}
+.tables{
+    grid-area: "tables";
+
+}
+.certificates{
+    grid-area: "certificates";
+   
+    
+}
+.articles{
+    grid-area: "articles";
+
+}
+.footers{
+    grid-area: "footers";
+ 
+    grid-column: 1/3;
+}
+.skills{
+    grid-area: "skills";
+  
+    
+}
+.certificates{
+    display: grid;
+
+
+}
+.certificates_a{
+    color: white;
+
+    
+}
+.certificates_a h2{
+    font-size: 3rem;
+  
+}
+
+
+.certificates_b-text2{
+    font-size: 1.5rem;
+}
+.certificates_b-text{
+    font-size: 1.5rem;
+}
+.certificates_b{
+    color: white;
+  
+    
+}
+.certificates{
+    margin-left: 50px;
+}
+.skills h2{
+color: gold;
+}
+
+table{
+    width: 95%;
+    height: 50%;
+    position: relative;
+    left:5%;
+    top: 15%;
+    
+
+}
+.tables h2{
+text-align: center;
+margin-bottom: -100px;
+color: white;
+font-size: 4rem;
+
+
+
+}
+
+
+table,th,td{
+    border: 2px solid whitesmoke;
+    padding: 1.5rem;
+    border-collapse: collapse;
+
+}
+th{
+    background-color: green;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 3rem;
+    font-size: 2rem;
+    
+    
+}
+td{
+    padding: 25px 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;}
+.para{
+    margin-top: 13rem;
+    margin-left: 1rem;
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+tr:hover{
+    background-color: wheat;
+    cursor: pointer;
+}
+.articles_adis{
+    width: 98%;
+
+
+}
+.articles h2{
+    color: white;
+    font-size: 2.7rem;
+  
+    margin-top: -50px;
+}
+
+
+img{
+    width: 60%;
+
+    
+}
+
+
+.articles--text{
+    
+    color: white;
+    font-size: 1.3rem;
+    text-align: justify;
+    text-indent: 500px;
+    font-style: bold;
+
+    
+}
+.skills h2{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+.skills_describes{
+   
+    color: white;
+    font-size: 1.5rem;
+    
+}
+.skills__progress{
+    margin-left: 16%;
+
+  
+
+}
+progress{
+    font-size: 40px;
+}
+.one{
+    font-size: 2.5rem;
+    color: greenyellow;
+    
+}
+.skills__progress-des{
+    color: white;
+    font-size: 1.6rem;
+    margin-left: -40px;
+}
+
+
+
+
+footer{     
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0px;
+    padding-bottom: 1000px;
+    margin: 0px;
+    color: white;
+    position: relative;
+    top: 120px;
+    left: 0px;
+    bottom: 100%; 
+}
+.phone-number{
+    padding-top: 100px;
+    margin-top: 1px;
+    padding-bottom: -100px;
+    margin-bottom: -100px;
+}
+.email{
+    padding-top: 100px;
+    margin-top: 1px;
+    padding-bottom: -100px;
+    margin-bottom: -100px;
+}
+.Social-media{
+    padding-top: 100px;
+    margin-top: 1px;
+    padding-bottom: -100px;
+    margin-bottom: -100px;
+}
+.copyright{
+    padding-top: 100px;
+    margin-top: 1px;
+    padding-bottom: -100px;
+    margin-bottom: -100px;
+}
+footer{
+display: flex;
+padding: 90px;
+}
