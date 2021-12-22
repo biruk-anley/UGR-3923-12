@@ -101,6 +101,7 @@ header{
         margin-top: 8.7em;
         padding-left: 10px;
     }
+
     @media  (max-width:426px){
         header{
             position: static;
@@ -138,9 +139,10 @@ header{
             
         }
          
-    }
-
-    @media (min-width:640px) and (max-width:890px){
+    } 
+   
+    
+    @media (min-width:500px) and (max-width:890px){
         .picture{
             margin-top: 110px;
             width: 45%;
@@ -168,5 +170,15 @@ header{
         }
         
     }
+    @media  (max-width:499px){
+        header{
+            position: static;
+        }
+         img.picture {
+            width: 70%;
+            margin: 30px auto;
+            float: none;
+         }
+        }
     
   
