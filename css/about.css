@@ -158,7 +158,10 @@ font-size: 20px;
     }
 }
 
-@media(min-width:425px) and (max-width:525px){
+@media(min-width:473px) and (max-width:525px){
+    .header{
+        width: 10%;
+    }
     .main{
         display: block;
         grid-template-columns: 1fr;
@@ -187,7 +190,7 @@ font-size: 20px;
     }
     .About-me__intro--para {
         font-size: 15px;
-        width: 100%;
+        width: 94%;
     }
     .my-skills__sub--item {
         
