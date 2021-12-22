@@ -74,6 +74,10 @@ header{
     line-height: 1.2;
     display: flex;
 }
+.Introduction__about--button:visited{
+    background: rgb(28, 28, 145);
+
+}
 .Introduction__about--button{
        
         position: relative;
@@ -170,12 +174,12 @@ header{
         }
         
     }
-    @media  (max-width:500px){
+    @media  (max-width:510px){
         header{
             position: static;
         }
          img.picture {
-            width: 70%;
+            width: 60%;
             margin: 30px auto;
             float: none;
          }
