@@ -173,6 +173,10 @@
         font-size: 20px;
         padding-left: 0;
     }
+    .footer{
+        flex-direction: column;
+        
+    }
     .humburger{
         display: block;
         margin-right: 10px;
