@@ -177,6 +177,10 @@ img:hover{
         margin-right: 10px;
         margin-bottom: 15px;
     }
+    a.link{
+        font-size: 20px;
+        padding: 3px;
+    }
     .email{
         color: red;
         padding-left: 5%;

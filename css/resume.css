@@ -9,7 +9,7 @@ main{
 }
 
 .tables{
-   
+       
         grid-column: span 2;
         grid-row: span 2;
         margin: auto;
@@ -20,10 +20,14 @@ main{
         border-radius: 25px;
         font-family: sans-serif;
         box-shadow: -10px -15px 5px rgb(61, 91, 116);
+        resize: horizontal;
         
         
 
 
+}
+table{
+    resize: horizontal;
 }
 .certificates{
     grid-column: span 3;
@@ -195,7 +199,7 @@ padding: 10px;
 
 
 table,th,td{
-    border: 2px solid rgba(245, 245, 245, 0.411);
+    border: 0.125em solid rgba(245, 245, 245, 0.411);
     
     padding: 15px;
     border-collapse: collapse;
@@ -307,15 +311,17 @@ figure p {
     text-transform: uppercase;
     padding: 15px;
 }
-@media(min-width:320px) and (max-width:500px){
+@media(min-width:320px) and (max-width:600px){
     main{
         display: grid;
         grid-template-columns: 1fr;
         width: 110%;
     }
-    .tables{
-        width: 90%;
-        
+    table{
+        width: 25em;
+    }
+    h2.table{
+        font-size: 1.5em;
     }
     td{
         font-size: 13px;
@@ -325,5 +331,24 @@ figure p {
     }
     .tables-title{
         font-size: 20px;
+    }
+}
+@media(min-width:670px)and(max-width:980px){
+    main{
+        grid-gap: 1px;
+        margin-top: 0px;
+    }
+    .tables {
+        width: 155%;
+    }
+    table{
+        width: 150%;
+    }
+    .tables h2{
+        font-size: 1em;
+    }
+    .certificates{
+        width: 78%;
+        margin-left: 900px;
     }
 }

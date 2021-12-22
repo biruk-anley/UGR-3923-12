@@ -1,4 +1,4 @@
-header{
+.header{
     position: static;
 }
 .picture{
@@ -101,19 +101,22 @@ header{
         position: relative;
     }
 
-    footer{
+    .footer{
         margin-top: 8.7em;
         padding-left: 10px;
     }
 
     @media  (max-width:426px){
-        header{
+        .header{
             position: static;
         }
          img.picture {
             width: 70%;
             margin: 30px auto;
             float: none;
+         }
+         .Introduction__content{
+             margin-top: 10px;
          }
         
          .Introduction__content h2 {
@@ -146,10 +149,11 @@ header{
     } 
    
     
-    @media (min-width:500px) and (max-width:890px){
+    @media (min-width:510px) and (max-width:890px){
         .picture{
-            margin-top: 110px;
-            width: 45%;
+            margin-top: 10px;
+            width: 65%;
+            
         }
         .Introduction__about--button{
             margin-top: 10px;
@@ -159,23 +163,25 @@ header{
             margin-left: 90px;
         }
         
+       
+        
         .Introduction__content h2 {
            display: block;
         }
         .Introduction__content h2 span{
-            font-size: 1.4em;
+            font-size: 1em;
             position: relative;
             bottom: 18px;
             
             top: 15px;
         }
         .Introduction__content--describe p{
-            font-size: 15px;
+            font-size: 1px;
         }
         
     }
     @media  (max-width:510px){
-        header{
+        .header{
             position: static;
         }
          img.picture {
@@ -183,6 +189,9 @@ header{
             margin: 30px auto;
             float: none;
          }
+         .Introduction__content{
+            margin-top: 10px;
+        }
         }
     
   
