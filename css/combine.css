@@ -269,7 +269,7 @@
     
      
 }
-@media(min-width:501px) and (max-width:692px)
+@media(min-width:460px)and (max-width:692px)
 {
     .footer {
         display: flex;
@@ -335,13 +335,18 @@
         font-size: 20px;
     }
     .social-media__icons{
-        padding-left: 10px;
+        padding-left: 1px;
     }
     .imgs{
-        padding-left: 15px;
+        padding-left: 5px;
     }
     .copyright{
         padding: 10px;
         margin-left: 7vh;
+    }
+    .icon{
+        flex-wrap: wrap;
+        width: 55%;
+        padding: 0.4vh;
     }
 }

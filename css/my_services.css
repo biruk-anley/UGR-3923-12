@@ -1,5 +1,5 @@
 
-    header{
+    .header{
         position: static;
     }
     .service {
@@ -64,7 +64,7 @@
     letter-spacing: 1px;
 
 }
-.content__item h2{
+.content__item-h2{
     font-size: 25px;
     font-weight: bolder;
     padding: 12px;
@@ -96,13 +96,13 @@ h3.next-title {
     margin: 15px;
     font-size: 1.3em;
 }
-.next a{
+.next-a{
     text-decoration: none;
 }
-.next a:visited{
+.next-a:visited{
     color: #0fe5e5;
 }
-a.next:hover{
+.next-a:hover{
     color: red;
 }
 
@@ -120,7 +120,7 @@ a.next:hover{
         font-size: 2rem;
     }
     .service-description{
-        font-size: 16px;
+        font-size: 13px;
     }
     .content__item{
         font-size: 14px;
@@ -131,13 +131,26 @@ a.next:hover{
 }
 @media (max-width:768px) and (min-width:426px){
     .service-title{
-        margin-top: 150px;
+        margin-top: 40px;
+        font-size: 35px;
         
     }
     .next h3{
         margin-left: 0em;
         width: 100%;
     }
+    .service-description{
+        font-size: 14px;
+    }
    
     
+}
+@media(max-width :869px){
+    .content__item{
+        max-width: 290px;
+
+    }
+    .content__item--h2{
+        font-size: 20px;
+    }
 }

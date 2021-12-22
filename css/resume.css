@@ -232,14 +232,22 @@ figure p {
     text-transform: uppercase;
     padding: 15px;
 }
-@media(min-width:320px) and (max-width:600px){
+@media(max-width:480px){
+    .header{
+        width: 120%;
+    }
+}
+@media(max-width:320px){
     .header{
         width: 140%;
     }
+}
+@media(min-width:320px) and (max-width:600px){
+    
     .main{
         display: grid;
         grid-template-columns: 1fr;
-        width: 110%;
+        width: 120%;
     }
     .table-container{
         width: 25em;
@@ -255,6 +263,9 @@ figure p {
     }
     .tables-title{
         font-size: 20px;
+    }
+    .articles--text{
+        margin-left: 1px;
     }
 }
 @media(min-width:670px)and(max-width:980px){
