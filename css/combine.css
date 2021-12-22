@@ -127,6 +127,8 @@
     padding-bottom: 5px;
 }
 
+/* here is the new footer ok check with other */
+
 
 
 @media (min-width:769px) and (max-width:984px){
@@ -141,7 +143,7 @@
 }
 
 @media (min-width:650px) and (max-width:768px){
-    footer{
+    .footer{
         padding-bottom: 10px;
     }
     
@@ -153,8 +155,16 @@
         font-size: 2em;
         margin-bottom: 15px;
     }
-   
 }
+     @media (min-width:305px) and (max-width:515px)
+    {
+        .footer{
+            
+            
+            flex-direction: column;
+        
+    }
+    } 
 @media (min-width:305px) and (max-width:650px) {
     .heading h2{
        font-size: 30px;
@@ -173,10 +183,7 @@
         font-size: 20px;
         padding-left: 0;
     }
-    .footer{
-        flex-direction: column;
-        
-    }
+    
     .humburger{
         display: block;
         margin-right: 10px;
@@ -261,4 +268,80 @@
     }
     
      
+}
+@media(min-width:501px) and (max-width:692px)
+{
+    .footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+        color: white;
+        box-shadow: -10px -15px 5px rgb(35, 37, 39);
+        background-color: hsla(231, 70%, 5%, 0.384);
+        margin-top: 10rem;
+        border-radius: 15px;
+        
+        padding-bottom: 10px;
+        align-items: flex-start;
+        padding: 25px;
+        margin-left: 4vh;
+        margin-bottom: 5px;
+    }
+    .holder {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+        margin-left: 10px;
+    }
+    .phone-number {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .phone-number h3 {
+        font-size: 22px;
+    }
+    p {
+        padding-left: 25px;
+        font-size: 18px;
+    }
+    .emails {
+        display: flex;
+        flex-direction: row;
+         margin-left: 0;
+        font-size: 19px;
+    }
+    .emails h3 {
+         margin-top: 0; 
+         margin-left: 0; 
+         padding-left: 0; 
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+    .emails p {
+         padding-right: 40px;
+         font-size: 17px; 
+         margin: 0; 
+    }
+    section.Social-media {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    .Social-media h3 {
+         padding-left: 1px; 
+        font-size: 20px;
+    }
+    .social-media__icons{
+        padding-left: 10px;
+    }
+    .imgs{
+        padding-left: 15px;
+    }
+    .copyright{
+        padding: 10px;
+        margin-left: 7vh;
+    }
 }
