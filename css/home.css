@@ -1,100 +1,25 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-
-    min-height: 100vh; 
-    height: 100%;
-    background-color: #232A34;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-
-    /* #040706     #1F2235      #232A34 */
-
-}
-
 header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    
+    position: static;
+}
+.picture{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-    background-color: hsla(231, 70%, 5%, 0.384);
-}
-
-.humburger{
-    display: none;
-
-   background-color: transparent;
-   border: none;
-   color: white;
-   cursor: pointer;
-   font-size: 30px;
-    
-}
-.humberger:focus{
-    outline:none;
-}
-.imge{
-    display: flex;
-    border: red 2px solid;
+    width: 22%;
     float: right;
     margin-right:5%;
+    margin-top: 69px;
+}
+.picture img{
+    width: 10%;
 }
 
-
-
-.logo{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.9rem;
-    color: white;
-    cursor: pointer;
-    text-transform: capitalize;
-    font-weight: 700;
-    letter-spacing: 2px;
-    
-
-}
-
-
-
-.nav__bar{
-    list-style-type: none;
-   
-
-}
-.nav__bar--list{
-    display: flex;
-    
-    display: inline;
-    flex-wrap: wrap;
-
-}
-.nav__bar--list a{
-    text-decoration: none;
-    padding: 0 1.4rem;
-    font-size: 1.4rem;
-    color: white;
-
-}
-.nav__bar--list a:hover{
-    color: rgb(218, 106, 106);
-}
-.Introduction{
+.Introduction {
     display: flex;
     align-items: center;
-    
-    padding: 140px;
     padding-bottom: 20px;
+
+}
+.Introduction__content{
+    margin-top: 60px;
 }
 
 .Introduction__content h2{
@@ -102,106 +27,146 @@ header{
     color: white;
     font-weight: 500;
     line-height: 1em;
+    margin-top: 130px;
+    text-indent: 50px;
+    padding: 10px;
+    text-align: center;
+   
     }
 .Introduction__content h2 span{
-        font-size: 1.5em;
+        font-size: 1.8em;
         font-weight: 600;
+        padding-left: 15px;
+        font-family: monospace;
+        
     }
-.Introduction__content p{
-        padding-top: 0.9rem;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1.3rem;
-        color: white;
+    .Introduction__content--describe{
+    
+    margin-top: 30px;
+    
+    padding: 15px;
+    font-size: 20px;
+    /* margin-bottom: 20px; */
+    line-height: 1.5;
+    width: 75%;
+    margin: auto;
+    text-indent: 50px;
+    letter-spacing: 1.5px;
+    text-transform: full-width;
+    color: white;
         
     }
 .Introduction__about{
-    padding-top: 2rem;
+    padding-top: 1rem;
     position: absolute;
+    
+    
+}
+.Introduction__about p{
+    
+    color: white;
+    text-indent: 50px;
+    letter-spacing: 1.5px;
+    text-transform: full-width;
+    padding: 2% 0%;
+    font-size: 1px;
+    
+    line-height: 1.2;
+    display: flex;
 }
 .Introduction__about--button{
+       
         position: relative;
         background: rgb(28, 28, 145);
         display: inline-block;
         color: white;
-        margin-top: 20px;
-        left: 2rem;
+        margin-top: 15px;
+        left: 30%;
         padding: 20px 30px;
         font-size: 18px;
         text-transform: uppercase;
         text-decoration: none;
         letter-spacing: 2px;
         font-weight: 500;
-        border-radius: 5%;   
+        border-radius: 20px;
+         
+        
+       
+    }
+    body{
+        position: relative;
     }
 
     footer{
+        margin-top: 8.7em;
+        padding-left: 10px;
+    }
+    @media  (max-width:426px){
+        header{
+            position: static;
+        }
+         img.picture {
+            width: 70%;
+            margin: 30px auto;
+            float: none;
+         }
         
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        color: white;
-        margin-top: 21rem;
-        /* margin-bottom: 100px; */
-    
-    }
-    
-    .Social-media h3{
-        font-size: 26px;
-        padding-left: 40px;
-        color: #00ffffb4;
-        margin-bottom: 8px;
+         .Introduction__content h2 {
+            font-size: 2.1em;
+            color: white;
+            font-weight: 500;
+            line-height: 1em;
+            text-align: center;
+            margin-top: 0px;
+            text-indent: 0px;
+            
+        }
         
-    }
-    .social-media__icons{
-     
-      display: flex;
-      flex-wrap: wrap;
-     justify-content: space-around;
-     align-items: center;
-     
-    }
-    .icon{
-        padding: 1px;
-        background-color:rgba(54, 172, 99, 0.719); 
-        
-        border-radius: 15px;
-    }
-    .social-media__icons a{
-        padding: 10px;
-    }
-    .emails{
-        margin-left: 5em;
-    }
-    
-    .emails h3{
-        padding-left: 2em;
-        padding-bottom: 5px;
-        font-size: 1.4rem;
-        color: #00ffffb4;
-    }
-    .phone-number h3{
-        font-size: 22px;
-        color: #00ffffb4;
-        padding-bottom: 5px;
-    }
-    img:hover{
-        background-color:rgb(0, 225, 255);
-        
-    
-    }
-    
-    
-    .copywrite--name{
-        color: aqua;
-    }
-    .holder{
-        display: flex;
-      justify-content: space-between;
-        
+        .Introduction__content h2 span {
+            font-size: 1.5em;
+            font-weight: 100;
+            display: block;
+            padding: 20px 0;
+            margin-bottom: 50px;
+
+        }
+        .Introduction__content--describe{
+            font-size: 18px;
+        }
+        .Introduction__about--button{
+            margin-top: 25px;
+            
+        }
+         
     }
 
-
-
-
-
+    @media (min-width:640px) and (max-width:890px){
+        .picture{
+            margin-top: 110px;
+            width: 45%;
+        }
+        .Introduction__about--button{
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .emails {
+            margin-left: 90px;
+        }
+        
+        .Introduction__content h2 {
+           display: block;
+        }
+        .Introduction__content h2 span{
+            font-size: 1.4em;
+            position: relative;
+            bottom: 18px;
+            
+            top: 15px;
+        }
+        .Introduction__content--describe p{
+            font-size: 15px;
+        }
+        
+    }
+    
+  

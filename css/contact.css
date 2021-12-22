@@ -1,17 +1,26 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+
+.heading--text{
+    color: white;
+    text-align: center;
+    width: 25%;
+    padding-top: 15px;
+    height: 80px;
+    border: 2px solid hsla(231, 70%, 5%, 0.384) ;
+    font-size: 2.5rem;
+    background-color: hsla(231, 70%, 5%, 0.384)  ;
+    margin: 100px;
+    border-radius: 25px;
+    margin-left: 38%;
+    margin-bottom: -170px;
+    margin-top: 200px;
 }
-body{
-    /* min-height: 100vh; 
-    height: 100%;
-    margin: auto; */
-    background-color:#232A34 ;
-    background-size: cover;
-
-    /* #040706     #1F2235      #232A34 */
-
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.users-info{
+    grid-column: span 3; 
 }
 
 .users-info{
@@ -21,118 +30,17 @@ body{
     justify-content: center;
 }
 
-
-
-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-    background-color: hsla(231, 70%, 5%, 0.384);
-    
-    
-    
-}
-
-.logo{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
-    color: white;
-    cursor: pointer;
-    text-transform: capitalize;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-.humburger{
-    display: none;
-
-   background-color: transparent;
-   border: none;
-   color: white;
-   cursor: pointer;
-   font-size: 30px;
-    
-}
-.humberger:focus{
-    outline:none;
-}
-
-
-
-.nav__bar{
-    list-style-type: none;
-   
-
-}
-.nav__bar--list{
-    display: flex;
-    
-    display: inline;
-    flex-wrap: wrap;
-
-}
-.nav__bar--list a{
-    text-decoration: none;
-    padding: 0 1.4rem;
-    font-size: 1.4rem;
-    color: white;
-
-}
-.nav__bar--list a:hover{
-    color: rgb(218, 106, 106);
-}
-.contact{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.heading h2{
-    color: white;
-   
-    text-align: center;
-    
-    width: 25%;
-    padding-top: 15px;
-    height: 80px;
-    border: 2px solid hsla(231, 70%, 5%, 0.384) ;
-    font-size: 2.5rem;
-    
-   
-    background-color: hsla(231, 70%, 5%, 0.384)  ;
-    margin: 100px;
-    border-radius: 25px;
-    margin-left: 38%;
-    margin-bottom: -170px;
-    margin-top: 200px;
-    
-
-}
-.users-info{
-    grid-column: span 3;
-    
-    
-   
-}
-
 .email{
-    padding-left: 50px;
-   
-    
+    padding-left: 50px;   
 }
-input{
+.name-input{
     width:110%;
     padding: 15px;
     border-radius: 15px;
     
     
 }
-label{
+.suggest{
     font-size: 24px;
     color: white;
     display: flex;
@@ -168,7 +76,6 @@ label{
     margin-left: 26%;
     cursor: pointer;
     font-weight: bolder;
-
 }
 .send:hover{
     color:rgb(43, 189, 226);
@@ -178,88 +85,18 @@ textarea{
     width: 564%;
     resize: none;
 }
-footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-    margin-top: 10rem;
-    padding-bottom: 10px;
-
-}
-
-.Social-media h3{
-    font-size: 26px;
-    padding-left: 40px;
-    color: #00ffffb4;
-    margin-bottom: 8px;
-    
-}
-.social-media__icons{
- 
-  display: flex;
-  flex-wrap: wrap;
- justify-content: space-around;
- align-items: center;
- 
-}
-.icon{
-    padding: 1px;
-    background-color:rgba(54, 172, 99, 0.719); 
-    
-    border-radius: 15px;
-}
-.social-media__icons a{
-    padding: 10px;
-}
 
 
-.emails h3{
-    padding-left: 2em;
-    padding-bottom: 5px;
-    font-size: 1.4rem;
-    color: #00ffffb4;
-}
-.emails{
-    margin-left:8em;
-    font-size: 19px;
-}
-.phone-number h3{
-    font-size: 22px;
-    color: #00ffffb4;
-    padding-bottom: 5px;
-}
-img:hover{
-    background-color:rgb(0, 225, 255);
-
-}
-
-
-.copywrite--name{
-    color: aqua;
-}
-.holder{
-    display: flex;
-  justify-content: space-between;
-    
-}
-
-@media (max-width:768px){
-    footer{
-        padding-bottom: 10px;
+@media (min-width:769px) and (max-width:984px){
+    .heading--text{
+        width: 50%;
     }
+}
+
+@media (min-width:650px) and (max-width:768px){
     
-    .nav__bar--list a{
-        font-size: 20px;
-    }
-    .logo{
-        padding-left: 7em;
-        font-size: 2em;
-        margin-bottom: 15px;
-    }
     .heading h2{
-        width: 30%;
+        width: 40%;
         font-size: 40px;
         margin-right:5px ;
         margin-left: 7em;
@@ -271,41 +108,19 @@ img:hover{
         margin-left: 5em;
     }
 }
-@media (max-width:912px){
-    .heading h2{
-        font-size:40px;
-    }
-   
-    
-}
+
 
 /*for mobile phone with 320 px*/
-@media (max-width:380px){
+@media (min-width:305px) and (max-width:650px) {
     .heading h2{
        font-size: 30px;
        width: 50%;
        margin-left: 100px;
     }
-    .nav{
-        display: none;
-    }
-    .nav.show {
-        display: flex;
-        width: 100%;
-        justify-content: flex-end;
-    }
-    .logo{
-        font-size: 20px;
-        padding-left: 0;
-    }
-    .humburger{
-        display: block;
-        margin-right: 10px;
-        margin-bottom: 15px;
-    }
+    
     .email{
         color: red;
-        padding-left: 0%;
+        padding-left: 5%;
         font-size: 10px;
     }
     .name--describe{
@@ -324,63 +139,7 @@ img:hover{
         width: 120%;
         
     }
-    .holder {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .phone-number h3{
-        font-size: 19px;
-        
-        
-    }
-    .phone-number {
-        width: 130px;
-        margin: auto;
-    }
-    
-   .emails h3{
-       
-       margin-top: 4%;
-       margin-left: 20%;
-       padding-left: 29px;
-       font-size: 20px;
-   }
-   .emails p{
-    
-    padding-right: 40px;
-    font-size: 17px;
-    margin: 3%;}
-    .icon{
-        font-size: 10px;
-        width: 60%;
-        padding: 8px;
-        border-radius: 45px;
-    }
-    .Social-media h3{
-        padding-left: 25%;
-        font-size: 20px;
-    }
-    .copyright{
-        font-size: 16px;
-    }
-    
-    
-    ul.nav_bar {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-    }
-
-    .nav__bar--list {
-        display: flex;
-        margin: 2px;
-    }
     
      
 }
-@media (max-width:425px){
-    body{
-        color: red;
-    }
-}
+

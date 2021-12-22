@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/combine.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--To include social media icon-->
 </head>
 <body>
@@ -13,52 +14,34 @@
         <div class="logo">
             <p>Biruk Anley</p>
         </div>
-        <button class="humburger" id="humburger">
-            <i class="fa fa-bars"></i>
-
-        </button>
+        <img src="../images/icons8-menu (7).svg" class="humburger" id="humburger" alt="HumbergerIcon for js" >
         <nav class="nav" id="nav">
             <ul class="nav_bar">
-                <li class="nav__bar--list"><a href="../html/index.html">Home</a></li>
-                <li class="nav__bar--list"><a href="about.html" >About me</a></li>
-                <li class="nav__bar--list"><a href="resume.html" >Resume</a></li>
-                <li class="nav__bar--list"><a href="my_services.html">My Services</a></li>
-                <li class="nav__bar--list"><a href="portfolio.html">Portfolio</a></li>
-                <li class="nav__bar--list"><a href="contact.html">Contact</a></li>
+                <li class="nav__bar--list"><a class="link" href="../index.html">Home</a></li>
+                <li class="nav__bar--list"><a class="link"  href="about.html" >About me</a></li>
+                <li class="nav__bar--list"><a class="link" href="resume.html" >Resume</a></li>
+                <li class="nav__bar--list"><a class="link" href="my_services.html">My Services</a></li>
+                <li class="nav__bar--list"><a class="link" href="portfolio.html">Portfolio</a></li>
+                <li class="nav__bar--list"><a class="link"  href="contact.html">Contact</a></li>
                 
-            </ul>
-
-            <!-- <div class="dropdown" style="float: right;">
-                <button class="dropbtn"><img  class="menu" src="../images/icons8-menu (1).svg" alt="" style="background-color: aqua;"></button>
-                <div class="dropdown-content">
-                    <a href="../html/index.html">Home</a>
-                    <a href="about.html" >About me</a>
-                    <a href="resume.html" >Resume</a>
-                    <a href="my_services.html">My Services</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-              </div> -->
-            
-           
+            </ul>  
         </nav>
     </header>
     <main>
         <section class="heading">
             <div>
-                <h2>Contact Me</h2>
+                <h2 class="heading--text">Contact Me</h2>
             </div>
         </section>
         <section class="contact">
-           
             <section class="users-info">
                 <form class="name" action="">
-                    <label  for="name"><span class="name--describe">User Name</span> </label><br>
-                    <input type="text" id="name"  name="name" placeholder="user name" required>
+                    <label class="suggest" for="name"><span class="name--describe">User Name</span> </label><br>
+                    <input class="name-input" type="text" id="name"  name="name" placeholder="user name" required>
                 </form>
                 <form class="email"  action="email">
-                    <label class="email--name" for="email"><span class="name--describe">Email</span> </label><br>
-                    <input type="text" id="email" name="email" placeholder="email" required><br>
+                    <label class="suggest" for="email"><span class="name--describe">Email</span> </label><br>
+                    <input  class ="name-input"type="text" id="email" name="email" placeholder="email" required><br>
                 </form>
                
                 
@@ -79,7 +62,7 @@
     <footer>
        <section class="holder">
             <section class="phone-number">
-                <h3>Phone-number</h3>
+                <h3 class="phone-number--h3">Phone-number</h3>
                 <p>+251965343294</p>
             </section>
             <section class="emails">
@@ -89,7 +72,7 @@
        </section>
         
         <section class="Social-media">
-            <h3>Follow me</h3>
+            <h3 class="Social-media--text">Follow me</h3>
             <div class="social-media__icons">
                 <div class="imgs"><a href="https://www.facebook.com/birukie.anelay/photos_by"> <img class="icon" src="../images/icons8-facebook.svg" alt="facebook logo"></a></div>
                 <div class="imgs"><a href="https://twitter.com/AnleyBiruk"> <img class="icon" src="../images/icons8-twitter-24.png" alt="twitter logo"></a></div>
@@ -101,6 +84,6 @@
             <p>copyright © 2021 by <span class="copyright--name"> Biruk Anley.</span> </p>
         </section>   
     </footer>
-    <script src="../../scripts/style.js"></script> 
+    <script src="../scripts/style.js"></script> 
 </body>
 </html>
