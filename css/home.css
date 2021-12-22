@@ -115,7 +115,6 @@
        .Introduction__content--holder{
            flex-direction: column;
            font-size: 10px;
-        
        }
        .Introduction__content--describe{
         font-size: 15px;
@@ -125,15 +124,12 @@
         background-color: hsla(231, 70%, 5%, 0.384);
         box-shadow: -10px -15px 5px rgba(61, 91, 116, 0.336);
     }
-       
-
    }
     
     @media (min-width:676px) and (max-width:990px){
         .picture{
             margin-top: 20px;
             width: 45%;
-            
         }
         .Introduction__content--holder{
             display: flex;
