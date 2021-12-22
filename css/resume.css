@@ -1,5 +1,5 @@
 
-main{
+.main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 55px;
@@ -7,9 +7,7 @@ main{
     padding: 25px;
     margin-top: 50px;   
 }
-
 .tables{
-       
         grid-column: span 2;
         grid-row: span 2;
         margin: auto;
@@ -20,29 +18,16 @@ main{
         border-radius: 25px;
         font-family: sans-serif;
         box-shadow: -10px -15px 5px rgb(61, 91, 116);
-        resize: horizontal;
-        
-        
-
-
-}
-table{
-    resize: horizontal;
 }
 .certificates{
     grid-column: span 3;
     grid-row: span 3;
-   
-    
     margin-left: 2em;
     border-radius: 15px;
-   
-    
 }
 .articles{
    grid-column: span 2;
    grid-row: span 2;
-   
    text-align: center;
    border-radius: 15px;
    grid-row-end: 5;
@@ -50,23 +35,20 @@ table{
 }
 
 .skills-bar{
-   grid-column: span 3;
-   grid-row: span 1;
-   padding: 15px 30px;
-   margin-left: 2em;
-   width: 80%;
-   background-color: hsla(231, 70%, 5%, 0.384);
+    grid-column: span 3;
+    grid-row: span 1;
+    padding: 15px 30px;
+    margin-left: 2em;
+    width: 80%;
+    background-color: hsla(231, 70%, 5%, 0.384);
     border-radius: 25px;
     font-family: sans-serif;
     box-shadow: -10px -15px 5px rgb(61, 91, 116);
     color: white;
     text-transform: uppercase;
-    
-    
 }
 .bar{
     margin: 20px 0;
-   
 }
 .info{
     margin-bottom: 5px;
@@ -86,7 +68,7 @@ table{
 }
 
 .progress-html{
-    background-color: rgb(50, 50, 255);
+    background-color: #08A4DD;
     width: 80%;
     height: 10px;
     position: absolute;
@@ -104,7 +86,7 @@ table{
 }
 
 .progress-java{
-    background-color: blue;
+    background-color: #08A4DD;
     width: 70%;
     height: 10px;
     position: absolute;
@@ -112,7 +94,7 @@ table{
 }
 
 .progress-python{
-    background-color: blue;
+    background-color:#08A4DD;
     width: 80%;
     height: 10px;
     position: absolute;
@@ -120,28 +102,23 @@ table{
 }
 
 .progress-c{
-    background-color: blue;
+    background-color:#08A4DD;
     width: 50%;
     height: 10px;
     position: absolute;
     border-radius: 25px;
 }
-
 .progress-editing{
-    background-color: blue;
+    background-color:#08A4DD;
     width: 90%;
     height: 10px;
     position: absolute;
     border-radius: 25px;
 }
-
-
 .certificates{
     display: grid;
     grid-template-rows: 1fr 1fr ;
     grid-gap: 49px;
-
-
 }
 .certificates_a{
     grid-row: span 1;
@@ -150,21 +127,12 @@ table{
     border-radius: 15px;
     font-size: 15px;
     width: 80%;
-
-    
 }
-.certificates_a h2{
-    font-size: 30px;
-    padding: 5px;
+.cetericates_a--h2{
+    font-size: 20px;
+    padding: 10px;
     color: white;
-    
-
-
-
-  
 }
-
-
 .certificates_b-text2{
     font-size: 15px;
 }
@@ -180,107 +148,63 @@ table{
     border-radius: 15px;
     font-size: 15px;
     width: 80%;
-  
-    
 }
 
-
-
-.tables h2{
+.tables-title{
 text-align: center;
-
 color: white;
-font-size:2em;
+font-size:4vh;
 padding: 10px;
-
-
-
 }
-
-
-table,th,td{
+.table-container,.table-row__head--title,.table-row__data{
     border: 0.125em solid rgba(245, 245, 245, 0.411);
-    
     padding: 15px;
     border-collapse: collapse;
-
 }
-th{
-    
-    
+.table-row__head--title{
         color: white;
         font-family: monospace;
         padding: 19px;
         font-size: 24px;
         text-transform: capitalize;
-   
-    
 }
-td{
-   
+.table-row__data{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     color: white;
-    
     font-size: 18px;}
-
-
-tr:hover{
+.table-row:hover{
     background-color: #3E5972;
     cursor: pointer;
-   
 }
-
 .articles_adis{
     width: 78%;
-
-
 }
-
-
-
- figure img{
+ .certeficate__image{
     width: 40%;
-    padding-left: 15px;
-
-    
+    padding-left: 50px;
 }
 .articles{
-  
     margin: auto;
     padding: 10px;
     letter-spacing: 0.4px;
     line-height: 25px;
-   
     background-color: hsla(231, 70%, 5%, 0.384);
     border-radius: 25px;
     font-family: sans-serif;
     box-shadow: -10px -15px 5px rgb(61, 91, 116);
+    margin-left: 40px;
 }
-
-
 .articles--text {
-    
     color: white;
     font-size: 16px;
-   
-  
-    
     font-style: bold;
-    
-
-    
 }
 .certificates_a{
-    
-  
-    
     color: white;
     font-family: sans-serif;
     border-radius: 25px;
     background-color: hsla(231, 70%, 5%, 0.384);
-   
-  
     font-size: 18px;
     line-height: 1.5;
     text-indent: 50px;
@@ -289,9 +213,6 @@ tr:hover{
 
 }
 .certificates_b{
-    
-  
-    
     color: white;
     font-family: sans-serif;
     border-radius: 25px;
@@ -312,21 +233,24 @@ figure p {
     padding: 15px;
 }
 @media(min-width:320px) and (max-width:600px){
-    main{
+    .header{
+        width: 140%;
+    }
+    .main{
         display: grid;
         grid-template-columns: 1fr;
         width: 110%;
     }
-    table{
+    .table-container{
         width: 25em;
     }
     h2.table{
         font-size: 1.5em;
     }
-    td{
+    .table-row__data{
         font-size: 13px;
     }
-    th{
+    .table-row__head--title{
         font-size: 15px;
     }
     .tables-title{
@@ -341,10 +265,10 @@ figure p {
     .tables {
         width: 155%;
     }
-    table{
+    .table-container{
         width: 150%;
     }
-    .tables h2{
+    .tables-title{
         font-size: 1em;
     }
     .certificates{
