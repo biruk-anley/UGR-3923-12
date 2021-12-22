@@ -1,0 +1,227 @@
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 10em;
+    
+  
+    
+}
+.image_about{
+    grid-column: span 1; 
+    
+     
+   
+   
+}
+.About-me{
+    grid-column: span 1;
+   
+}
+.imagess{
+    width: 90%;
+    padding-top: 1px;
+    margin-left:  1.5em ;
+    padding-left: 1em;
+    
+}
+
+.my-skills{
+    grid-column: span 1;
+  
+   
+}
+.About-me{
+    margin-top: 4rem;
+    margin-left: 4em;
+    margin-right: 2em;
+}
+.About-me__intro h2{
+    color: white;
+    background-color:hsla(231, 70%, 5%, 0.384) ;
+    
+    font-size: 3rem;
+    width: 30%;
+    padding-left: 0.5rem;
+    border-radius: 25px;
+    
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    margin-left: 25%;
+
+    
+
+}
+.About-me__intro h3{
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 7px;
+    margin-left: -7em;
+    text-transform: capitalize;
+    
+
+}
+.About-me__intro p{
+    padding-top: 10px;
+    text-indent: 50px;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 25px;
+    background-color:hsla(231, 70%, 5%, 0.384) ;
+    /* font-size: 19px;
+    
+    border-radius: 15px;
+    margin: 1.2em;
+    padding-left: 10px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    padding: 15px; */
+ 
+        padding: 25px;
+        margin: 25px;
+        font-size: 20px;
+        line-height: 1.5;
+        text-indent: 50px;
+        letter-spacing: 1.5px;
+        text-transform: full-width;
+        box-shadow: -10px -15px 5px rgb(61, 91, 116);
+        
+      
+            
+    
+
+}
+
+.my-skills h4{
+    padding-top: 10px;
+    margin-left: 50px;
+    font-size: 35px;
+    color: white;
+
+}
+
+
+.More {
+    background-color: hsl(231deg 82% 47% / 38%);
+    font-size: 2.5rem;
+    margin: 70%;
+    /* width: 660%; */
+    padding: 20px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+ a:hover {
+    color:rgb(224, 64, 112);
+}
+
+
+.my-skills--sub{
+    
+   
+    /* display: flex;justify-content: center; */
+
+    align-items: center;
+    margin-left: 25rem;
+    color: white;
+    list-style-type: square;
+    margin-bottom: -10px;
+    
+  
+
+}
+.my-skills--sub li{
+padding-left: 1px;
+padding-top: 10px;
+font-size: 20px;
+
+}
+
+@media (min-width:760px)and (max-width:912px){
+    hr{
+        display: none;
+    }
+    .imagess{
+        width: 150%;
+        margin-top: 150px;
+        margin-left: 1em;
+    }
+    .About-me__intro h2{
+        margin-left: 25%;
+        width: 60%;
+    }
+    .About-me__intro h3{
+        margin-left: 2em;
+    }
+    .About-me__intro p{
+        margin-top: 40px;
+        font-size: 15px;
+        margin-left: 60px;
+        width: fit-content;
+    }
+    .my-skills h4{
+        margin-left: 0px;
+        font-size: 30px;
+    }
+    .my-skills--sub{
+        font-size: 16px;
+        margin-left: 5rem;
+    }
+    .More{
+        font-size: 40px;
+        padding: 10px;
+        margin-top: 150px;
+    }
+    .image_about img {
+        max-width: 130%;
+    }
+}
+
+@media (max-width:450px){
+    main{
+        display: block;
+        grid-template-columns: 1fr;
+    }
+    .About-me{
+        grid-column: span 1;
+        width: 100%;
+        margin-left: 30px;
+       
+    }
+    .imagess{
+        width: 70%;
+        
+    }
+    .About-me__intro h2{
+        margin-left: 2%;
+        width: 80%;
+        font-size: 2.1em;
+        padding-right: 5px;
+    }
+    .About-me__intro h3{
+        font-size: 1.2rem;
+        margin: 7px 7px 1px0;
+    }
+}
+@media (max-width:320px){
+    .About-me__intro p{
+        width: 80%;
+        height: 280px;
+        font-size: 13px;
+        margin-left: 1px;
+        margin-top: 15px;
+        font-family: sans-serif;
+
+    }
+    
+    
+}
+
+
+
+

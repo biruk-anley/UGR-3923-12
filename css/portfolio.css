@@ -1,0 +1,116 @@
+
+     .Gallery{
+        
+        display: inline-flexbox;
+        text-align: center;
+      width: 30%;
+        margin: auto;
+        color: white;
+        border: 2px solid hsla(0, 0%, 3%, 0.384);
+        font-size: 3rem;
+        margin-top: 50px;
+        background-color: hsla(133, 69%, 5%, 0.384);
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: transparent;
+        box-shadow: 5px -5px 5px 5px lightslategrey;
+    }
+    .next {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 25px;
+       
+    }
+    h3.next-title {
+        border: 2px solid rgb(54, 53, 53);
+        padding: 15px 25px 15px 35px;
+    
+        background-color: rgba(20, 24, 23, 0.227);
+        border-radius: 155px;
+        margin: 15px;
+        font-size: 1.9em;
+    }
+    .next a{
+        text-decoration: none;
+    }
+    .next a:visited{
+        color: #0fe5e5;
+    }
+    .next a:hover{
+        color: rgb(255, 72, 0);
+    }
+
+.photo{
+    margin-top: 2rem;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+figure{
+    grid-column: span 1;
+    
+    
+}
+
+figure img{
+    border: hsla(231, 70%, 5%, 0.384) solid 2px;
+    width: 100%;
+    border-radius: 15px;
+}
+figcaption{
+    padding-left: 10px;
+    background-color: hsla(231, 70%, 5%, 0.384);
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    font-family: monospace;
+    font-size: 18px;
+    word-spacing: 2px;
+}
+ .pic:hover{
+    
+    width: 110%;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    box-shadow: 5px 2px 3px rgba(255, 255, 255, 0.459);
+}
+@media (min-width:460px) and (max-width:1015px){
+    .Gallery{
+        width: 40%;
+
+    }
+    figcaption{
+        font-size: 15px;
+    }
+    .next{
+        font-size: 20px;
+    }
+}
+@media  (max-width:450px){
+    .Gallery{
+        width: 80%;
+        font-size: 2rem;
+    }
+    .photo{
+        grid-template-columns: 1fr;
+        grid-gap: 45px;
+    }
+    figcaption{
+        font-size: 16px;
+        margin-top: 3px;
+    }
+    p{
+        font-size: 20px;
+        padding: 5px;
+        text-align: center;
+    }
+    h3.next-title {
+      
+        margin: 5px;
+        font-size: 1.1em;
+    }
+}

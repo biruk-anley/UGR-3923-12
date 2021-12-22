@@ -1,0 +1,145 @@
+
+
+.heading--text{
+    color: white;
+    text-align: center;
+    width: 25%;
+    padding-top: 15px;
+    height: 80px;
+    border: 2px solid hsla(231, 70%, 5%, 0.384) ;
+    font-size: 2.5rem;
+    background-color: hsla(231, 70%, 5%, 0.384)  ;
+    margin: 100px;
+    border-radius: 25px;
+    margin-left: 38%;
+    margin-bottom: -170px;
+    margin-top: 200px;
+}
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.users-info{
+    grid-column: span 3; 
+}
+
+.users-info{
+    margin-top: 200px;
+    display: flex;
+     flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.email{
+    padding-left: 50px;   
+}
+.name-input{
+    width:110%;
+    padding: 15px;
+    border-radius: 15px;
+    
+    
+}
+.suggest{
+    font-size: 24px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: -10px;
+}
+
+.suggetion{
+    
+    grid-column: span 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.button{
+    grid-column: span 3;
+  
+    float: right;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+   
+    
+}
+.send{
+    color: black;
+    display: flex;
+    font-size: 15px;
+    border-radius: 15px;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 26%;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.send:hover{
+    color:rgb(43, 189, 226);
+}
+textarea{
+    margin-left: -174px;
+    width: 564%;
+    resize: none;
+}
+
+
+@media (min-width:769px) and (max-width:984px){
+    .heading--text{
+        width: 50%;
+    }
+}
+
+@media (min-width:650px) and (max-width:768px){
+    
+    .heading h2{
+        width: 40%;
+        font-size: 40px;
+        margin-right:5px ;
+        margin-left: 7em;
+    }
+    .send{
+        margin-left: 50%;
+    }
+    .emails{
+        margin-left: 5em;
+    }
+}
+
+
+/*for mobile phone with 320 px*/
+@media (min-width:305px) and (max-width:650px) {
+    .heading h2{
+       font-size: 30px;
+       width: 50%;
+       margin-left: 100px;
+    }
+    
+    .email{
+        color: red;
+        padding-left: 5%;
+        font-size: 10px;
+    }
+    .name--describe{
+        font-size: 20px;
+    }
+    .emails{
+        margin-left: 1em;
+    }
+
+    
+    .name{
+        font-size: 14px;
+    }
+    textarea{
+        margin-left: -14px;
+        width: 120%;
+        
+    }
+    
+     
+}
+
