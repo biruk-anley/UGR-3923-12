@@ -73,6 +73,9 @@
     }
 
     @media  (max-width:511px){
+        .header{
+            width: 15%;
+        }
          .picture {
             width: 60%;
             margin: 30px auto;
@@ -106,6 +109,9 @@
         }
     }
    @media(min-width:511px) and (max-width:675px){
+       .header{
+           width: 150%;
+       }
        .picture{
            width: 40%;
        }
