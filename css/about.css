@@ -1,60 +1,39 @@
 
-main{
+.main{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin-top: 10em;
-    
-  
-    
+    margin-top: 4em;
 }
 .image_about{
     grid-column: span 1; 
-    
-     
-   
-   
 }
 .About-me{
     grid-column: span 1;
-   
 }
 .imagess{
     width: 90%;
     padding-top: 1px;
     margin-left:  1.5em ;
     padding-left: 1em;
-    
 }
-
 .my-skills{
     grid-column: span 1;
-  
-   
 }
-.About-me{
-    margin-top: 4rem;
-    margin-left: 4em;
-    margin-right: 2em;
-}
-.About-me__intro h2{
+
+.About-me__intro--h2{
     color: white;
     background-color:hsla(231, 70%, 5%, 0.384) ;
-    
     font-size: 3rem;
     width: 30%;
     padding-left: 0.5rem;
     border-radius: 25px;
-    
     margin-bottom: 15px;
     justify-content: center;
     align-items: center;
     padding-left: 2rem;
     margin-left: 25%;
-
-    
-
 }
-.About-me__intro h3{
+.About-me__intro--head{
     color: white;
     font-size: 2rem;
     display: flex;
@@ -62,80 +41,57 @@ main{
     margin: 7px;
     margin-left: -7em;
     text-transform: capitalize;
-    
-
 }
-.About-me__intro p{
+.About-me__intro--para{
     padding-top: 10px;
     text-indent: 50px;
     color: white;
     font-family: sans-serif;
     border-radius: 25px;
     background-color:hsla(231, 70%, 5%, 0.384) ;
-    /* font-size: 19px;
-    
-    border-radius: 15px;
-    margin: 1.2em;
-    padding-left: 10px;
-    word-spacing: 2px;
-    letter-spacing: 1px;
-    padding: 15px; */
- 
-        padding: 25px;
-        margin: 25px;
-        font-size: 20px;
-        line-height: 1.5;
-        text-indent: 50px;
-        letter-spacing: 1.5px;
-        text-transform: full-width;
-        box-shadow: -10px -15px 5px rgb(61, 91, 116);
-        
-      
-            
-    
-
+    padding: 25px;
+    margin: 25px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-indent: 50px;
+    letter-spacing: 1.5px;
+    text-transform: full-width;
+    box-shadow: -10px -15px 5px rgb(61, 91, 116);
 }
 
-.my-skills h4{
+.my-skills__head{
     padding-top: 10px;
     margin-left: 50px;
     font-size: 35px;
     color: white;
-
 }
 
 
 .More {
     background-color: hsl(231deg 82% 47% / 38%);
     font-size: 2.5rem;
-    margin: 70%;
-    /* width: 660%; */
-    padding: 20px;
+    display: flex;
+    padding: 10px;
     border-radius: 25px;
     color: white;
     text-decoration: none;
+    justify-content: center;
+    margin-top: 15px;
+    width: 40%;
 }
 
- a:hover {
+ .More:hover {
     color:rgb(224, 64, 112);
 }
 
-
-.my-skills--sub{
-    
-   
-    /* display: flex;justify-content: center; */
-
+.my-skills__sub{
     align-items: center;
     margin-left: 25rem;
     color: white;
     list-style-type: square;
     margin-bottom: -10px;
-    
-  
-
 }
-.my-skills--sub li{
+.my-skills__sub--item{
 padding-left: 1px;
 padding-top: 10px;
 font-size: 20px;
@@ -143,7 +99,13 @@ font-size: 20px;
 }
 
 @media (min-width:760px)and (max-width:912px){
-    hr{
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 5px;
+        grid-gap: 60px;
+    }
+    .horizontal{
         display: none;
     }
     .imagess{
@@ -151,65 +113,100 @@ font-size: 20px;
         margin-top: 150px;
         margin-left: 1em;
     }
-    .About-me__intro h2{
-        margin-left: 25%;
-        width: 60%;
+    .About-me__intro--h2{
+        font-size: 3em;
+        text-align: center;
+        width: 50%;
+        padding: 5px;
+        border-radius: 15px;
     }
-    .About-me__intro h3{
-        margin-left: 2em;
+    .About-me__intro--head{
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        text-transform: capitalize;
+        margin-top: 15px;
+        margin-bottom: -10px;
     }
-    .About-me__intro p{
+    .About-me__intro--para{
         margin-top: 40px;
         font-size: 15px;
         margin-left: 60px;
         width: fit-content;
     }
-    .my-skills h4{
+    .my-skills__head{
         margin-left: 0px;
         font-size: 30px;
     }
     .my-skills--sub{
-        font-size: 16px;
+        font-size: 14px;
         margin-left: 5rem;
     }
+    .my-skills__sub--item{
+        font-size: 18px;
+        margin-left: -100px;
+    }
     .More{
-        font-size: 40px;
-        padding: 10px;
-        margin-top: 150px;
+        font-size: 30px;
+        padding: 15px;
+        margin-top:5px;
+        width: 110%;
+        margin-left: -15px;
     }
     .image_about img {
         max-width: 130%;
     }
 }
 
-@media (max-width:450px){
-    main{
+@media(min-width:425px) and (max-width:525px){
+    .main{
         display: block;
         grid-template-columns: 1fr;
     }
-    .About-me{
-        grid-column: span 1;
-        width: 100%;
-        margin-left: 30px;
-       
+    .horizontal{
+        margin-left: 15px;
+    }
+    .About-me__intro--h2 {
+        text-align: center;
+        width: 40%;
+        
+        font-size: 2.1em;
+        padding: 10px;
+        margin-top: 15px;
+        margin-left: 25%;
     }
     .imagess{
-        width: 70%;
+        width: 80%;
         
     }
-    .About-me__intro h2{
-        margin-left: 2%;
-        width: 80%;
-        font-size: 2.1em;
-        padding-right: 5px;
+    
+    .About-me__intro--head{
+        font-size: 1.4rem;
+        margin-left: 0px;
+        padding: 10px;
     }
-    .About-me__intro h3{
-        font-size: 1.2rem;
-        margin: 7px 7px 1px0;
+    .About-me__intro--para {
+        font-size: 15px;
+        width: 100%;
+    }
+    .my-skills__sub--item {
+        
+        padding-top: 10px;
+        font-size: 19px;
+        margin-left: -150px;
+    }
+    .More {
+      
+        font-size: 2.2rem;
+        display: flex;
+        padding: 10px;
+        margin-top: 15px;
+        width: 150%;
+        margin-left: -3em;
     }
 }
 @media (max-width:320px){
-    .About-me__intro p{
+    .About-me__intro--para{
         width: 80%;
         height: 280px;
         font-size: 13px;
