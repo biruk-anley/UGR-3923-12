@@ -235,16 +235,17 @@ padding: 10px;
 
 }
 
-@media(max-width:600px){
-    .header{
-    width: 140%;
-    }
-
-}
 @media(max-width:330px){
     .header{
         width: 150%;
     }
+}
+
+@media(max-width:600px){
+    .header{
+    width: 131%;
+    }
+
 }
 @media(max-width:908px){
     .main{
@@ -279,11 +280,11 @@ padding: 10px;
         margin-left: 5px;
         display: grid;
         grid-template-columns: 1fr;
-        width: 120%;
+        width: 110%;
     
     }
     .tables{
-        width: 120%;
+        width: 110%;
         
     }
     .table-container{
@@ -314,7 +315,7 @@ padding: 10px;
         width: 120%;
     }
     .skills-bar{
-        width: 100%;
+        width: 110%;
     }
 }
 
