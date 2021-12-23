@@ -147,7 +147,7 @@ h3.next-title {
 }
 @media(max-width :869px){
     .content__item{
-        max-width: 290px;
+        max-width: 390px;
 
     }
     .content__item--h2{

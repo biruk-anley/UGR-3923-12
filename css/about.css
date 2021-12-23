@@ -163,6 +163,7 @@ font-size: 20px;
     .main{
         display: block;
         grid-template-columns: 1fr;
+        margin-right: 18px;
     }
     .horizontal{
         margin-left: 15px;

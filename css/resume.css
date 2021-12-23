@@ -9,6 +9,7 @@
 }
 .tables{
         grid-column: span 2;
+        width: 100%;
         grid-row: span 2;
         margin: auto;
         padding: 15px;
@@ -157,8 +158,9 @@ font-size:4vh;
 padding: 10px;
 }
 .table-container,.table-row__head--title,.table-row__data{
+    margin: auto;
     border: 0.125em solid rgba(245, 245, 245, 0.411);
-    padding: 15px;
+    padding: 18px;
     border-collapse: collapse;
 }
 .table-row__head--title{
@@ -195,6 +197,12 @@ padding: 10px;
     box-shadow: -10px -15px 5px rgb(61, 91, 116);
     margin-left: 40px;
 }
+.figure__description{
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 15px;
+}
 .articles--text {
     color: white;
     font-size: 16px;
@@ -226,37 +234,67 @@ padding: 10px;
     box-shadow: -10px -15px 5px rgba(61, 91, 116, 0.336)
 
 }
-figure p {
-    color: white;
-    font-size: 24px;
-    text-transform: uppercase;
-    padding: 15px;
-}
-@media(max-width:480px){
+
+@media(max-width:600px){
     .header{
+    width: 140%;
+    }
+
+}
+@media(max-width:330px){
+    .header{
+        width: 150%;
+    }
+}
+@media(max-width:908px){
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+    }
+    .tables{
+        grid-column: span 2;
+        margin-top: 5px;
+    }
+    .certificates{
+        grid-column: span 2;
+        margin-left: 10px;
         width: 120%;
     }
-}
-@media(max-width:320px){
-    .header{
-        width: 140%;
+    .skills-bar{
+        grid-column: span 1;
+        width: 150%;
     }
 }
-@media(min-width:320px) and (max-width:600px){
-    
+@media(min-width:621px) and (max-width:720px){
     .main{
         display: grid;
         grid-template-columns: 1fr;
+        margin-left: 15px;
+    }
+}
+@media(min-width:320px) and (max-width:620px){
+    
+    .main{
+        margin-left: 5px;
+        display: grid;
+        grid-template-columns: 1fr;
         width: 120%;
+    
+    }
+    .tables{
+        width: 120%;
+        
     }
     .table-container{
-        width: 25em;
+        width: 100%;
     }
+    
     h2.table{
         font-size: 1.5em;
     }
     .table-row__data{
-        font-size: 13px;
+        font-size: 19px;
     }
     .table-row__head--title{
         font-size: 15px;
@@ -266,24 +304,19 @@ figure p {
     }
     .articles--text{
         margin-left: 1px;
+        width: 100%;
     }
-}
-@media(min-width:670px)and(max-width:980px){
-    main{
-        grid-gap: 1px;
-        margin-top: 0px;
-    }
-    .tables {
-        width: 155%;
-    }
-    .table-container{
-        width: 150%;
-    }
-    .tables-title{
-        font-size: 1em;
+    .articles{
+        margin-left:15px;
+        width: 110%;
     }
     .certificates{
-        width: 78%;
-        margin-left: 900px;
+        width: 120%;
+    }
+    .skills-bar{
+        width: 100%;
     }
 }
+
+
+
